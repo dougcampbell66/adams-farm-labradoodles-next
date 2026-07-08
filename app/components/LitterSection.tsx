@@ -3,8 +3,8 @@ import Link from "next/link";
 import { litters, getPuppiesForLitter } from "@/src/data/litters";
 
 const statusStyles = {
-  available: { bg: "bg-[#E1F5EE]", text: "text-[#085041]", label: "Available" },
-  reserved: { bg: "bg-[#FAEEDA]", text: "text-[#633806]", label: "Reserved" },
+  available: { bg: "bg-[#E8F5EC]", text: "text-[#1a5c2e]", label: "Available" },
+  reserved: { bg: "bg-[#FDECEA]", text: "text-[#7a2018]", label: "Reserved" },
 };
 
 export default function LitterSection() {
@@ -20,7 +20,7 @@ export default function LitterSection() {
       <div className="max-w-[1080px] mx-auto">
         {/* Litter header */}
         <div className="mb-10">
-          <span className="block font-extrabold text-[0.75rem] tracking-[0.14em] uppercase text-navy mb-3">
+          <span className="block font-extrabold text-[0.75rem] tracking-[0.14em] uppercase text-calm-blue mb-3">
             Available Now
           </span>
           <h2 className="font-heading font-semibold text-[2rem] text-navy mb-2">
@@ -35,12 +35,12 @@ export default function LitterSection() {
           </div>
           <div className="flex gap-3">
             {availableCount > 0 && (
-              <span className="text-[0.72rem] font-extrabold px-3 py-[5px] rounded-full bg-[#DCEAF6] text-navy">
+              <span className="text-[0.72rem] font-extrabold px-3 py-[5px] rounded-full bg-[#E8F5EC] text-[#1a5c2e]">
                 {availableCount} Available
               </span>
             )}
             {reservedCount > 0 && (
-              <span className="text-[0.72rem] font-extrabold px-3 py-[5px] rounded-full bg-[#E4EFE6] text-navy">
+              <span className="text-[0.72rem] font-extrabold px-3 py-[5px] rounded-full bg-[#FDECEA] text-[#7a2018]">
                 {reservedCount} Reserved
               </span>
             )}

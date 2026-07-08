@@ -11,8 +11,8 @@ export const metadata: Metadata = {
 };
 
 const statusStyles = {
-  available: { bg: "bg-[#E1F5EE]", text: "text-[#085041]", label: "Available" },
-  reserved: { bg: "bg-[#FAEEDA]", text: "text-[#633806]", label: "Reserved" },
+  available: { bg: "bg-[#E8F5EC]", text: "text-[#1a5c2e]", label: "Available" },
+  reserved: { bg: "bg-[#FDECEA]", text: "text-[#7a2018]", label: "Reserved" },
 };
 
 export default function PuppiesPage() {
