@@ -2,12 +2,12 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <div className="relative py-[100px] px-6 text-center bg-cream overflow-hidden">
-      {/* Decorative background bubbles — behind content */}
-      <div className="absolute top-[12%] right-[7%] w-[120px] h-[120px] rounded-full bg-calm-blue opacity-20 pointer-events-none" />
-      <div className="absolute bottom-[18%] left-[5%] w-[80px] h-[80px] rounded-full bg-focus-green opacity-25 pointer-events-none" />
-      <div className="absolute top-[30%] left-[10%] w-[50px] h-[50px] rounded-full bg-excite-yellow opacity-35 pointer-events-none" />
-      <div className="absolute bottom-[25%] right-[12%] w-[30px] h-[30px] rounded-full bg-feelings-red opacity-30 pointer-events-none" />
+    <div className="relative min-h-[600px] md:min-h-screen px-6 text-center bg-cream overflow-hidden flex flex-col items-center justify-center py-16">
+      {/* Decorative background bubbles — full opacity, positioned clear of text */}
+      <div className="absolute top-[8%] right-[6%] w-[120px] h-[120px] rounded-full bg-calm-blue pointer-events-none" />
+      <div className="absolute bottom-[10%] left-[4%] w-[80px] h-[80px] rounded-full bg-focus-green pointer-events-none" />
+      <div className="absolute top-[20%] left-[8%] w-[50px] h-[50px] rounded-full bg-excite-yellow pointer-events-none" />
+      <div className="absolute bottom-[20%] right-[10%] w-[30px] h-[30px] rounded-full bg-feelings-red pointer-events-none" />
 
       {/* Content */}
       <div className="relative z-10">
