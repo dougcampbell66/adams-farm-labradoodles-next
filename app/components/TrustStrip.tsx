@@ -8,7 +8,7 @@ const items = [
 
 export default function TrustStrip() {
   return (
-    <div className="bg-[#EAF1F8] py-7 px-6 flex justify-center gap-10 flex-wrap border-t border-b border-warm-border">
+    <div className="bg-excite-yellow py-7 px-6 flex justify-center gap-10 flex-wrap border-t border-b border-warm-border">
       {items.map(({ num, label }) => (
         <div
           key={label}
