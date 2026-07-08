@@ -13,14 +13,10 @@ export default function Hero() {
         ALAA Gold Paw Accredited · Greensboro, NC
       </span>
       <h1 className="font-heading font-semibold text-[2.6rem] leading-[1.15] text-navy mb-[18px]">
-        Raised in Loving Homes.
-        <br />
-        Ready for Yours.
+        Puppies with a Purpose.
       </h1>
       <p className="text-[1.05rem] max-w-[560px] mx-auto mb-7 text-[#4A4A4A]">
-        30–40 hours of hands-on socialization, structured early neurological
-        stimulation, and a program built the way good preschools are —
-        intentional, from day three.
+        We raise Australian Labradoodle puppies with purpose and intention.
       </p>
       <Link
         href="/puppies"

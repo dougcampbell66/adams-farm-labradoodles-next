@@ -8,8 +8,8 @@ export default function Home() {
     <main>
       <Hero />
       <TrustStrip />
-      <ProgramSection />
       <LitterSection />
+      <ProgramSection />
     </main>
   );
 }

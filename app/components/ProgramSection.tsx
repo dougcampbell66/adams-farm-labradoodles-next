@@ -30,9 +30,10 @@ export default function ProgramSection() {
           Two programs most breeders skip.
         </h2>
         <p className="text-[1.02rem] opacity-90 max-w-[620px] mb-11 leading-relaxed">
-          Every Adams Farm puppy goes through a structured developmental program
-          before they ever meet you — not vague &ldquo;well-socialized&rdquo;
-          marketing language, but a specific, repeatable process.
+          We raise Australian Labradoodle puppies with purpose and intention.
+          Early Neurological Stimulation sets the groundwork. Advanced
+          socialization builds confidence and composure. Crate training and good
+          manners prepare them for a long, happy life.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {cards.map(({ title, body, stat, borderColor }) => (
