@@ -1,6 +1,8 @@
+import Link from "next/link";
+
 export default function Hero() {
   return (
-    <div className="py-[72px] px-6 text-center">
+    <div className="py-[72px] px-6 text-center bg-cream">
       <div className="flex justify-center gap-[10px] mb-[22px]">
         <div className="w-3 h-3 rounded-full bg-calm-blue" />
         <div className="w-3 h-3 rounded-full bg-focus-green" />
@@ -20,12 +22,12 @@ export default function Hero() {
         stimulation, and a program built the way good preschools are —
         intentional, from day three.
       </p>
-      <a
-        href="#"
+      <Link
+        href="/puppies"
         className="inline-block bg-navy text-cream font-extrabold py-[14px] px-7 rounded-lg text-[0.95rem] hover:bg-[#253b5a] transition-colors"
       >
         Meet the Puppies
-      </a>
+      </Link>
     </div>
   );
 }

@@ -1,7 +1,9 @@
+import { stats } from "@/src/data/stats";
+
 const items = [
-  { num: "3", label: "Years Breeding" },
-  { num: "7", label: "Litters Placed" },
-  { num: "35", label: "Families" },
+  { num: String(stats.yearsBreeding), label: "Years Breeding" },
+  { num: String(stats.littersPlaced), label: "Litters Placed" },
+  { num: String(stats.happyFamilies), label: "Families" },
   { num: "3-Yr", label: "Health Guarantee" },
 ];
 
