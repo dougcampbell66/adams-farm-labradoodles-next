@@ -1,8 +1,7 @@
-import { Resend } from "resend";
+import nodemailer from "nodemailer";
 import { NextResponse } from "next/server";
 
 export async function POST(request: Request) {
-  const resend = new Resend(process.env.RESEND_API_KEY);
   try {
     const body = await request.json();
     const { name, email, phone, message } = body as {
@@ -19,11 +18,19 @@ export async function POST(request: Request) {
       );
     }
 
-    const to = process.env.CONTACT_EMAIL ?? "douglascampbell66@gmail.com";
+    const transporter = nodemailer.createTransport({
+      host: "smtp.hostinger.com",
+      port: 465,
+      secure: true,
+      auth: {
+        user: process.env.SMTP_EMAIL,
+        pass: process.env.SMTP_PASSWORD,
+      },
+    });
 
-    await resend.emails.send({
-      from: "Adams Farm Website <onboarding@resend.dev>",
-      to,
+    await transporter.sendMail({
+      from: `"Adams Farm Website" <${process.env.SMTP_EMAIL}>`,
+      to: process.env.SMTP_EMAIL,
       replyTo: email,
       subject: `New puppy inquiry from ${name}`,
       html: `
