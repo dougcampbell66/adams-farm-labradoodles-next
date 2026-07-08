@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Hero() {
@@ -8,6 +9,31 @@ export default function Hero() {
       <div className="absolute bottom-[10%] left-[4%] w-[80px] h-[80px] rounded-full bg-focus-green pointer-events-none" />
       <div className="absolute top-[20%] left-[8%] w-[50px] h-[50px] rounded-full bg-excite-yellow pointer-events-none" />
       <div className="absolute bottom-[20%] right-[10%] w-[30px] h-[30px] rounded-full bg-feelings-red pointer-events-none" />
+
+      {/* Circular photo badge — bottom-right, bleeding off edge */}
+      <div
+        className="absolute pointer-events-none"
+        style={{
+          width: 400,
+          height: 400,
+          bottom: "-80px",
+          right: "-60px",
+          borderRadius: "50%",
+          border: "7px solid #F2C14E",
+          boxShadow: "0 8px 32px rgba(0,0,0,0.18)",
+          overflow: "hidden",
+        }}
+      >
+        <Image
+          src="/images/hero/founder-hero-portrait.jpg"
+          alt="Happy family with their Adams Farm Labradoodle puppy"
+          fill
+          className="object-cover"
+          style={{ objectPosition: "50% 20%" }}
+          sizes="400px"
+          priority
+        />
+      </div>
 
       {/* Content */}
       <div className="relative z-10">
